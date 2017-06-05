@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" parallel="tests">
+  <test name="test2(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="nodeUrl" value="http://127.0.0.1:5556"/>
+    <classes>
+      <class name="testGrid.demo.GridThread">
+        <methods>
+          <include name="test" invocation-numbers="0"/>
+          <include name="quit"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testGrid.demo.GridThread -->
+    </classes>
+  </test> <!-- test2(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
